@@ -1,0 +1,24 @@
+<div class="view-layout container">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products;let counter = index ">
+      <th scope="row">{{ counter + 1 }}</th>
+      <td>{{ product.title }}</td>
+      <td>{{ product.price }}</td>
+      <td class="text-center">{{ product.quantity }} </td>
+      <button type="button" (click)="onEdit()" class="btn btn-outline-warning mx-1">Edit</button>
+      <button type="button" (click)="onDelete(product)" class="btn btn-outline-danger">Delete</button>
+    </tr>
+  </tbody>
+</table>
+</div>

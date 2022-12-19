@@ -1,0 +1,86 @@
+body {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #333;
+  background-color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+}
+img {
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 229, 236);
+}
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid rgb(240, 234, 234);
+  box-shadow: 3px 3px 5px rgb(66, 61, 61);
+  border-radius: 15px;
+  position: relative;
+}
+.contact-form .form-close {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  top: 8px;
+  text-decoration: none;
+  color: #000;
+}
+.contact-form h2 {
+  text-align: center;
+}
+.contact-submit {
+  color: #000;
+  width: 100%;
+  text-transform: capitalize;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.contact-submit:hover {
+  color: #fff;
+  background-color: #000;
+}
+.field-required {
+  font-weight: bold;
+  color: rgba(194, 0, 0, 1);
+}
+/* .btnRegister {
+  font-size: 15px;
+} */

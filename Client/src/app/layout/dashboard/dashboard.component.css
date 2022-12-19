@@ -1,0 +1,44 @@
+.home_products {
+  padding: 1.6rem;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  min-height: 460px;
+  margin: 0;
+}
+.card-text {
+  margin-bottom: 0.25rem;
+}
+.cardI {
+  width: 224px;
+  height: 300px;
+}
+.card-price {
+  color: #b12704;
+  font-size: 1.2rem;
+  margin-bottom: 0.12rem;
+}
+.card-title {
+  font-size: 15px;
+}
+.cardP {
+  margin: 0.3rem;
+  position: relative;
+  width: 15.62rem !important;
+  /* margin-right: 0.5rem;
+  margin-bottom: 0.5em; */
+  /* height: 350px; */
+  /* max-height: 402px; */
+  font-size: 12px;
+}
+/* .card-body {
+   position: relative; 
+} */
+.btnT {
+  padding: 7px;
+  font-size: 13px;
+  margin-right: 2.4rem;
+  /* position: absolute;
+  left: 15px;
+  top: 130px; */
+}

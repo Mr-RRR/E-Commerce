@@ -1,0 +1,41 @@
+<div class="contact">
+  <form class="contact-form">
+    <a href="/" class="form-close">×</a>
+    <h2 class="text-primary header-name">Login</h2>
+    <div class="form-group mb-2">
+      <label class="my-1" for="name">Email: </label
+      ><span class="field-required">*</span>
+      <input
+        type="text"
+        [(ngModel)]="userData.email"
+        class="form-control"
+        name="email"
+        id="email"
+        required
+      />
+    </div>
+    <div class="form-group mb-2">
+      <label class="my-1" for="password">Password: </label
+      ><span class="field-required">*</span>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="userData.password"
+        class="form-control"
+        id="password "
+        required
+      />
+    </div>
+    <button
+      class="my-2 contact-submit gradient-btn"
+      (click)="loginUser()"
+      name="submit"
+    >
+      Submit
+    </button>
+    <div class="row" style="margin-top: 15px;">
+      <p class="col-sm-9">Don't have an account ?</p>
+      <a href="/register" class="btnRegister col-sm-3">Register</a>
+    </div>
+  </form>
+</div>

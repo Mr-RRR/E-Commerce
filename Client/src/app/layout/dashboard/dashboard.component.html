@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="row home_products">
+  <div class="col-sm-6 card cardP" *ngFor="let product of products" style="width: 12rem">
+    <a href="/dashboard/{{product._id}}">
+      <img
+        class="card-img-top cardI"
+        src={{product.productImage}}
+        alt="Card image cap"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <!-- <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p> -->
+      <div class="card-price">
+        <span>₹{{product.price}}</span>
+      </div>
+      <button (click)="addToCart(product)" class="btn btnT btn-primary">Add To Cart</button>
+      <a href="#" class="btn btnB btn-success">Buy</a>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
